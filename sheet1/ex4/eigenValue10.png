@@ -7,7 +7,7 @@ eigenValue = []
 eigenVector =[]
 Tfixed =[0][0]
 eNumbers = 10
-N = 30
+N = 10
 eValue = [0]*eNumbers
 eVector = [0]*eNumbers
 
@@ -23,13 +23,12 @@ for i in range(10):
     eigenValue.append(eValue)
     eigenVector.append(eVector)
 plt.plot(w, eigenValue)
-plt.plot(w, eigenVector)
 
 plt.xlabel('w')
 plt.ylabel('eigenValue')
-plt.title('The eigenValue vs w with N=30')
+plt.title('The eigenValue vs w with N=10')
 plt.grid(True)
-plt.savefig("eigenValue30.png")
+plt.savefig("eigenValue.png")
 plt.show()
 
 print(w, v)
