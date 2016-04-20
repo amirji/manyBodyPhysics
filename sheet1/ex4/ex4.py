@@ -22,9 +22,8 @@ for i in range(10):
     eVector = eVector[:,index]
     eigenValue.append(eValue)
     eigenVector.append(eVector)
-plt.plot(w, eigenValue)
-plt.plot(w, eigenVector)
 
+plt.plot(w, eigenValue)
 plt.xlabel('w')
 plt.ylabel('eigenValue')
 plt.title('The eigenValue vs w with N=30')
